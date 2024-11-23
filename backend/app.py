@@ -46,7 +46,7 @@ def health():
     return "OK", 200
 
 if __name__ == '__main__':
-    # 環境変数PORTを取得（デフォルトは8000）
-    port = int(os.environ.get('PORT', 8000))
+    # 環境変数PORTを取得（デフォルトは8080）
+    port = int(os.environ.get('PORT', 8080))
     # デバッグモードをローカル環境では有効に、本番では無効に
     app.run(host='0.0.0.0', port=port, debug=False)
